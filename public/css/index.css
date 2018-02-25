@@ -1,0 +1,86 @@
+body.noscroll {
+	overflow: hidden;
+}
+
+.model-search {
+	padding-top: 15%;
+}
+
+.model-search.has-result {
+	padding-top: 22px;
+}
+
+.model-search.has-result .ivu-input-wrapper {
+	margin-left: 3%;
+}
+
+.ivu-input-wrapper {
+	width: 60%;
+	margin: auto;
+	font-size: 14px;
+}
+
+.ivu-input {
+	height: 48px;
+}
+
+.ivu-select {
+	min-width: 120px;
+	width: 220px;
+	text-align: left;
+}
+
+.model-search .ivu-btn {
+	width: 60px;
+}
+
+.ivu-icon-ios-search {
+	font-size: 22px;
+}
+
+.doc-item {
+	width: 100%;
+	margin-bottom: 12px;
+}
+
+.result-list {
+	width: 94%;
+	margin: auto;
+	padding-top: 22px;
+}
+
+.ivu-card-extra .doc-item-btn {
+	margin-right: 12px;
+	font-size: 18px;
+}
+
+.ivu-card-body {
+	padding-bottom: 3px;
+	padding-left: 11px;
+}
+
+.ivu-card-head {
+	padding: 11px 8px;
+}
+
+.doc-item-footer {
+	display: inline-block;
+	margin-top: 12px;
+}
+
+.ivu-page {
+	margin-top: 22px;
+	margin-bottom: 22px;
+	text-align: right;
+}
+
+.model-add {
+	width: 80%;
+	text-align: left;
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+.ivu-modal {
+	width: 80% !important;
+}
