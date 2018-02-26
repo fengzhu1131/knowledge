@@ -13,7 +13,6 @@ class Kernel extends ConsoleKernel {
 	 */
 	protected $commands = [
 	// Commands\Inspire::class,
-		Commands\ModifyEnv::class,
 	];
 
 	/**
@@ -25,7 +24,6 @@ class Kernel extends ConsoleKernel {
 	protected function schedule(Schedule $schedule) {
 		// Run once a minute
 		//$schedule -> command('queue:work') -> cron('* * * * * *');
-		$schedule -> command('modifysolarterm:env') -> dailyAt('02:00');
 		//$schedule->command('queue:work')->everyFiveMinutes();
 		// Run once a day
 		//$schedule->command('queue:work')->daily();

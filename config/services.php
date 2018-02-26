@@ -38,19 +38,4 @@ return [
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
-    'weixin' => [
-        'app_id' => env('WEIXIN_APP_ID'),
-        'app_secret' => env('WEIXIN_APP_SECRET'),
-        'uri' => env('WEIXIN_URI','https://api.weixin.qq.com'),
-        'url' => env('WEIXIN_URL','/cgi-bin'),
-    ],
-    'weixin1' => [
-        'app_id' => env('WEIXIN_APP_ID1'),
-        'app_secret' => env('WEIXIN_APP_SECRET1'),
-        'uri' => env('WEIXIN_URI','https://api.weixin.qq.com'),
-        'url' => env('WEIXIN_URL','/cgi-bin'),
-    ],
-    "osspush" => [
-        "url" => env('OSS_PUSH_URL', "http://120.26.100.172:7001/jxv303"),
-    ],
 ];

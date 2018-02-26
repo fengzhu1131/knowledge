@@ -29,14 +29,6 @@ class AppServiceProvider extends ServiceProvider
         {
             return new \App\Libraries\Curl\HttpClientServices;
         });
-		$this->app->bind('weixin', function()
-        {
-            return new \App\Libraries\Weixin\WeixinServices;
-        });
-		$this->app->bind('share', function()
-        {
-            return new \App\Libraries\Share\ShareServices;
-        });
 		$this->app->bind('helplib', function()
         {
             return new \App\Libraries\Helplib\HelpLibServices;
