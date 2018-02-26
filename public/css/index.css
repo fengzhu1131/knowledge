@@ -12,6 +12,7 @@ body.noscroll {
 
 .model-search.has-result .ivu-input-wrapper {
 	margin-left: 3%;
+	width: 94%;
 }
 
 .ivu-input-wrapper {
