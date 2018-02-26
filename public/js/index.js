@@ -51,7 +51,7 @@ define(function(require, exports, module) {
 											width: '52px'
 										},
 										on: {
-											click:function(){
+											click: function() {
 												pVue.appendNode(data)
 											}
 										}
@@ -92,10 +92,13 @@ define(function(require, exports, module) {
 				keyword: '',
 				proModel: 'V100R003C00',
 				proModels: getProModelsTestData(),
-				docList: getDocListTestData()
+				docList: []
 			}
 		},
 		methods: {
+			btnSearch: function() {
+				this.keyword.trim().length > 0 ? this.docList = getDocListTestData(): '';
+			},
 			editItem: function(e) {
 				this.modalAdd = true;
 				document.body.classList.add('noscroll');

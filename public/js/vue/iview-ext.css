@@ -68,33 +68,6 @@
 	color: #fc1e70
 }
 
-pre {
-	padding: 0;
-	margin: 0
-}
-
-code {
-	display: inline-block;
-	background: #f7f7f7;
-	font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
-	margin: 0 3px;
-	padding: 1px 5px;
-	border-radius: 3px;
-	color: #666;
-	border: 1px solid #eee
-}
-
-pre code {
-	display: inline;
-	margin: 0;
-	padding: 0;
-	border: none;
-	background: transparent
-}
-
-pre.bg code {
-	background: #f7f7f7
-}
 
 .api table {
 	font-family: Consolas, Menlo, Courier, monospace;
@@ -12200,7 +12173,7 @@ span.ivu-radio+* {
 	width: 100%;
 	line-height: 1.5;
 	padding: 4px 7px;
-	font-size: 12px;
+	font-size: 14px;
 	color: #495060;
 	background-color: #fff;
 	background-image: none;
@@ -14733,7 +14706,7 @@ textarea.ivu-page-options-elevator input {
 	height: 32px;
 	line-height: 1.5;
 	padding: 4px 7px;
-	font-size: 12px;
+	font-size: 14px;
 	border: 1px solid #dddee1;
 	border-radius: 4px;
 	color: #495060;
