@@ -9453,9 +9453,11 @@ fieldset[disabled] .ivu-btn>a:only-child:after {
 }
 
 .ivu-btn:focus {
-	box-shadow: 0 0 0 2px rgba(45, 140, 240, .2)
+	box-shadow: 0 0 0 0px rgba(45, 140, 240, .2)
 }
-
+.ivu-btn:focus .ivu-icon-ios-search:before{
+	color: #57a3f3;
+}
 .ivu-btn-long {
 	width: 100%
 }
@@ -14737,7 +14739,7 @@ textarea.ivu-page-options-elevator input {
 
 .ivu-input:focus {
 	outline: 0;
-	box-shadow: 0 0 0 2px rgba(45, 140, 240, .2)
+	box-shadow: 0 0 0 0px rgba(45, 140, 240, .2)
 }
 
 .ivu-input[disabled],
