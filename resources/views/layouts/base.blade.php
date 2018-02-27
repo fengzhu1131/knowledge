@@ -8,7 +8,7 @@
 		<meta name="format-detection" content="telephone=no">
 		<meta name="description" content="">
 		<meta http-equiv="x-dns-prefetch-control" content="on">
-		<title>华为知识库系统</title>
+		<title>{{env('SYSTEM_NAME')}}</title>
 		<link rel="stylesheet" href="../css/fontawesome/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="../js/vue/iview.css" />
 		<link rel="stylesheet" href="../js/vue/iview-ext.css" />

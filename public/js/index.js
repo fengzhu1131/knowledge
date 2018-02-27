@@ -1,8 +1,10 @@
 "use strict";
 define(function(require, exports, module) {
+	var avh = (window.innerHeight) ? window.innerHeight : (document.documentElement && document.documentElement.clientHeight) ? document.documentElement.clientHeight : document.body.offsetHeight;
+	avh = avh - 64 - 43;
 	var Component = Vue.extend(getVueConfig());
 	var pVue = new Component().$mount('.app');
-	pVue.proModel = pVue.proModels[parseInt(Math.random() * pVue.proModels.length) - 1];
+	//pVue.proModel = pVue.proModels[parseInt(Math.random() * pVue.proModels.length) - 1];
 	var um = UM.getEditor('editor', {
 		//imageUrl: serverPath + "imageUp.php",
 		//imagePath: serverPath,
@@ -105,12 +107,16 @@ define(function(require, exports, module) {
 						content: '' //内容
 					},
 					keyword: '',
-					proModel: 'V100R003C00',
+					proModel: '',
 					proModels: getProModelsTestData(),
-					docList: []
+					docList: [],
+					layoutContentHeight: avh
 				}
 			},
 			methods: {
+				proChange: function(e) {
+					this.proModel.length > 0 ? (this.keyword = '') : '';
+				},
 				btnSearch: function() {
 					this.keyword.trim().length > 0 ? this.docList = getDocListTestData() : '';
 				},
@@ -128,6 +134,9 @@ define(function(require, exports, module) {
 						this.delComfirm = false;
 						this.$Message.success('删除成功');
 					}, 2000);
+				},
+				menuSelect:function(){
+					console.log(arguments);
 				},
 				renderContent: function(h, {
 					root,
