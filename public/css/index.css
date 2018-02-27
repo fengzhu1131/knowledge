@@ -178,3 +178,13 @@ body.noscroll {
 	text-decoration: underline;
 	color: #57a3f3;
 }
+
+.ivu-menu-vertical .ivu-menu-item-group-title {
+	padding-left: 16px;font-weight: bold;
+}
+
+.ivu-menu-item-group .ivu-menu-item {
+	padding-left: 42px;
+}.result-doc .ivu-layout-sider-children{
+	border-right:1px solid #dddee1;
+}
