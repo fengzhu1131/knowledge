@@ -37,7 +37,7 @@
 			<i-content>
 				<section :class="['model-search',docList.length>0?'has-result':'']">
 					@include('layouts.templates.search')
-					<section class="result-list" v-if="docList.length>0">
+					<section class="result-list" v-if="docList.length>0" :style="{height:layoutContentHeight-38-16-2+'px'}">
 						@include('layouts.templates.card-doc')
 					</section>
 					<section class="result-doc" v-if="docList.length == 0 && proModel.length>0">

@@ -82,8 +82,7 @@ body.noscroll {
 }
 
 .ivu-select {
-	min-width: 120px;
-	width: 160px;
+	width: 200px;
 	text-align: left;
 }
 
@@ -101,7 +100,6 @@ body.noscroll {
 }
 
 .result-list {
-	width: 94%;
 	margin: auto;
 	padding-top: 22px;
 }
@@ -147,8 +145,7 @@ body.noscroll {
 }
 
 .result-doc .ivu-breadcrumb {
-	margin-top: 0 !important;
-	margin-left: 11px !important;
+	margin: 11px !important;
 }
 
 .model-search .ivu-form-item {
@@ -161,5 +158,23 @@ body.noscroll {
 
 .result-doc,
 .result-list {
-	margin-top: 16px;
+	margin-top: 11px;
+	margin-right: 11px;
+}
+
+.result-doc>.ivu-layout {
+	border: 1px solid #dddee1;
+}
+
+.layout-nav .ivu-breadcrumb {
+	text-align: right;
+}
+
+.result-doc .ivu-layout-content {
+	background-color: #dddee1;
+}
+
+.layout-nav .ivu-breadcrumb-item-link {
+	text-decoration: underline;
+	color: #57a3f3;
 }

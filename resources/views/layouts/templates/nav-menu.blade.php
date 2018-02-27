@@ -1,7 +1,7 @@
 <template>
 	<row>
 		<i-col span="8">
-			<i-menu theme="light" active-name="1-1" open-names="[1]" accordion="true" on-select="menuActive" :style="{height:layoutContentHeight+'px',width: '200px'}">
+			<i-menu theme="light" active-name="1-1" open-names="[1]" on-select="menuActive" :style="{height:layoutContentHeight+'px',width: '200px'}">
 				<submenu name="1">
 					<template slot="title">
 						<icon type="ios-paper"></icon>

@@ -1,7 +1,7 @@
 <template>
 	<layout>
 		<sider hide-trigger>
-			<i-menu active-name="1-2" theme="light" width="auto" :open-names="['1']">
+			<i-menu active-name="1-2" accordion="true" theme="light" width="auto" :open-names="['1']" :style="{height:layoutContentHeight-38-11-2-11+'px'}">
 				<submenu name="1">
 					<template slot="title">
 						<icon type="ios-navigate"></icon>
@@ -55,7 +55,7 @@
 					Layout
 				</breadcrumb-item>
 			</breadcrumb>
-			<i-content :style="{padding: '24px', minHeight: '280px', background: '#fff'}">
+			<i-content :style="{padding: '0 11px', minHeight: '280px'}">
 				Content
 			</i-content>
 		</layout>
